@@ -89,7 +89,7 @@ struct ChecklistView: View {
             uncheckedItems += ["The operator is qualified for (dump truck: type 1 large-sized license, construction machinery pilot license/freight truck: type 1 large license (12 tons or more), type 1 general license (less than 12 tons)", "Place a guide in case of danger of contact with workers within the work radius", "Control to prevent dump trucks from approaching the slope tip or the ground at risk of collapse", "Dump trucks are not overloaded with soil"]
         }
         if isOOOSelected {
-            uncheckedItems += ["The driver is qualified for (less than 10 tons: type 1 general license, type 10 tons or more: type 1 large license)", "Ensure that the work place is free from the risk of conduction of facilities such as ground subsidence", "Operation after setting load and allowable working radius suitable for boom length and angle", "Safety rail installation of workstations"]
+            uncheckedItems += ["The driver is qualified for (less than 10 tons: type 1 general license, type 10 tons or more: type 1 large license)", "Ensure that the work place is free from the risk of conduction of facilities such as ground subsidence", "Operation after setting load and allowable working radius suitable for boom length and angle.", "Safety rail installation of workstations"]
         }
         
         return uncheckedItems.filter { !selectedItems.contains($0) }
@@ -156,7 +156,7 @@ struct ChecklistView: View {
                     ChecklistSectionView(title: "A Dump/Freight Truck", items: ["The operator is qualified for (dump truck: type 1 large-sized license, construction machinery pilot license/freight truck: type 1 large license (12 tons or more), type 1 general license (less than 12 tons)", "Place a guide in case of danger of contact with workers within the work radius", "Control to prevent dump trucks from approaching the slope tip or the ground at risk of collapse", "Dump trucks are not overloaded with soil"], selectedItems: $selectedItems)
                 }
                 if isOOOSelected {
-                    ChecklistSectionView(title: "Elevated Workstation", items: ["The driver is qualified for (less than 10 tons: type 1 general license, type 10 tons or more: type 1 large license)", "Ensure that the work place is free from the risk of conduction of facilities such as ground subsidence", "Operation after setting load and allowable working radius suitable for boom length and angle", "Safety rail installation of workstations"], selectedItems: $selectedItems)
+                    ChecklistSectionView(title: "Elevated Workstation", items: ["The driver is qualified for (less than 10 tons: type 1 general license, type 10 tons or more: type 1 large license)", "Ensure that the work place is free from the risk of conduction of facilities such as ground subsidence", "Operation after setting load and allowable working radius suitable for boom length and angle.", "Safety rail installation of workstations"], selectedItems: $selectedItems)
                 }
                 if noequip {
                     Text("No Equipments").font(.system(size: 15)).foregroundColor(Color.green)

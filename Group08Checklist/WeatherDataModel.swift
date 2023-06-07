@@ -48,7 +48,7 @@ public struct Weather {
         
         // 날씨 조작용. 윗줄 주석 처리하고 더울때/차가울때 선택해서 해제
 //        tempt = 40
-//        tempt = -10
+//        tempt = -1
 //        main = "Rain"
         
         description = response.weather.first?.description ?? ""
